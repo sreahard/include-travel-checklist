@@ -57,13 +57,17 @@ const App = () => {
           </button>
         </div>
         {itemsToPack.length > 0 && <h2>To Pack</h2>}
-        {itemsToPack.map(item => 
-          <TravelItem key={item.id} {...sharedItemProps} {...item} />
-        )}
+        <div className='App-item-container'>
+          {itemsToPack.map(item => 
+            <TravelItem key={item.id} {...sharedItemProps} {...item} />
+          )}
+        </div>
         {packedItems.length  > 0 && <h2>Packed</h2>}
-        {packedItems.map((item, index) => 
-          <TravelItem key={item.id} {...sharedItemProps} {...item} />
-        )}
+        <div className='App-item-container'>
+          {packedItems.map((item, index) => 
+            <TravelItem key={item.id} {...sharedItemProps} {...item} />
+          )}
+        </div>
         {items.length > 0 && <button onClick={removeAllItems}>Remove All Items</button>}
       </header>
     </div>

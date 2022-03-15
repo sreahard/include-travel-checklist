@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgba(40, 44, 55, .85);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,4 +17,12 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
+}
+
+.App-item-container {
+  text-align: left;
+}
+
+html {
+  background: url('../public/background.jpg') no-repeat center center fixed
 }

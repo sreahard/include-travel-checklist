@@ -1,6 +1,10 @@
 .TravelItem-container {
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: 1fr repeat(3, 40px) repeat(2, auto);
     margin-bottom: 10px;
+}
+
+.TravelItem-qty {
+    text-align: center;
 }

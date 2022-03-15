@@ -7,8 +7,8 @@ const TravelItem = ({ name, packed, quantity, id, removeItem, togglePacked, upda
             {name}
             <button disabled={quantity === 1} onClick={() => updateQuantity(quantity - 1, id)}>
                 -
-            </button> 
-            {quantity}
+            </button>
+            <span className={`${cssPrefix}-qty`}>{quantity}</span>
             <button onClick={() => updateQuantity(quantity + 1, id)}>
                 +
             </button>
@@ -16,7 +16,7 @@ const TravelItem = ({ name, packed, quantity, id, removeItem, togglePacked, upda
                 {packed ? 'Unpack' : 'Pack'}
             </button>
             <button onClick={() => removeItem(id)}>
-               Remove From List
+               Remove
             </button>
           </div>
 )}
