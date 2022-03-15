@@ -4,9 +4,8 @@ import { useLocalStorage, useMount } from 'react-use'
 import './App.css'
 import { useTravelReducer } from './reducers/travelItems'
 import TravelItem from './TravelItem';
-import sampleItems from './sampleItems'
 
-function App() {
+const App = () => {
   const { addItem, initItems, items, removeAllItems, removeItem, togglePacked, updateQuantity } = useTravelReducer()
   // create a default item to handle resetting state after adding item
   const defaultItem = { name: '', quantity: 1, packed: false }
@@ -32,6 +31,7 @@ function App() {
   // Just to keep thing DRY
   const inputId = 'item-name'
   const sharedItemProps = { removeItem, togglePacked, updateQuantity }
+
   const handleAddItem = () => {
     // add item with reducer and give it a uuid
     addItem({ ...newItem, id: uuidv4() })
@@ -70,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
