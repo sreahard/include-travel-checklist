@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/include-travel-checklist/static/css/main.66ed57cb.css",
+    "main.js": "/include-travel-checklist/static/js/main.04aca71e.js",
+    "static/js/787.2e376007.chunk.js": "/include-travel-checklist/static/js/787.2e376007.chunk.js",
+    "static/media/background.jpg": "/include-travel-checklist/static/media/background.bcedab13440322bf1359.jpg",
+    "index.html": "/include-travel-checklist/index.html",
+    "main.66ed57cb.css.map": "/include-travel-checklist/static/css/main.66ed57cb.css.map",
+    "main.04aca71e.js.map": "/include-travel-checklist/static/js/main.04aca71e.js.map",
+    "787.2e376007.chunk.js.map": "/include-travel-checklist/static/js/787.2e376007.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66ed57cb.css",
+    "static/js/main.04aca71e.js"
+  ]
+}
